@@ -6,7 +6,7 @@ dotenv.config({ path: "./config.env" });
 
 const DB = process.env.DATABASE.replace(
   "<password>",
-  process.env.DATABASEPASSWORD
+  process.env.DATABASE_PASSWORD
 );
 
 mongoose.set("strictQuery", true);
